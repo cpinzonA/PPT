@@ -18,23 +18,21 @@ for(i=0;i<numero;i++){
     }else{
         maquina='papel'
     }
-   
-    
    alert(`la maquina escogio, ${pc} ${maquina}`);
    if (pc===user) {
      alert('empate');
     }else if (pc==1 & user==2) {
-         alert('usuario gana');countU=countU+1
+        alert('maquina gana');countM=countM+1
      }else if (pc==2 & user==1) {
-              alert('maquina gana');countM=countM+1
-      }else if (pc==1 & user==3) {
-              alert('maquina gana');countM=countM+1
-       }else if (pc==2 & user==3) {
         alert('usuario gana');countU=countU+1
+      }else if (pc==1 & user==3) {
+        alert('usuario gana');countU=countU+1
+       }else if (pc==2 & user==3) {
+        alert('maquina gana');countM=countM+1
        }else if (pc==3 & user==1) {
-            alert('usuario gana');countU=countU+1
+        alert('maquina gana');countM=countM+1
          }else if (pc==3 & user==2) {
-            alert('maquina gana');countM=countM+1
+            alert('usuario gana');countU=countU+1
          }
 
 }
